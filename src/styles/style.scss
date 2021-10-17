@@ -17,8 +17,6 @@ Body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 20px 20px 5px $txt-color;
-
 }
 
 h1 {
@@ -27,16 +25,20 @@ h1 {
 
 #drum-machine {
     background-color: $snd-color;
-    max-width: 50%;
+    width: 700px;
     min-height: 300px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    @media screen  and (max-width: 700px) {
+        flex-direction: column;
+    }
 }
 
 .drum-pads {
     margin: 1em 0;
-    max-width: 50%;
+    width: 50%;
+    margin: 2rem auto;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
@@ -44,16 +46,19 @@ h1 {
     .drum-pad {
         border-radius: 10%;
         background-color: $pads-color;
-
     }
 }
 
 #display {
     display: flex;
+    max-width: 40%;
+    margin: 1rem auto;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
     h1 {
         border: 2px solid $main-background-color;
+        margin : 1rem auto;
         padding: 0.5em 1em;
 
     }
@@ -62,7 +67,6 @@ h1 {
         font-size: 20px;
         color: $txt-color;
         padding: 1em;
-        text-align: center;
     }
 }
 

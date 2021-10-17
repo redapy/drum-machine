@@ -1,11 +1,9 @@
 
+import React from 'react';
+
 const PadsList = ({pads, playAudio}) => {
     
-    
-    
-
-    return ( 
-                
+    return (        
         <div className="drum-pads">
               {pads.map((pad) => (
             <button 
@@ -18,7 +16,6 @@ const PadsList = ({pads, playAudio}) => {
 
         ))}
         </div>
-
      );
 }
  

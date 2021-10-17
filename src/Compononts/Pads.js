@@ -1,4 +1,4 @@
-import React, { compenents, useState, useEffect} from "react"
+import React, { useState, useEffect} from "react"
 import Display from "./Display"
 import african from "../pad/african.wav"
 import bassbell from "../pad/bassbell.wav"
@@ -17,8 +17,7 @@ const Pads = () => {
   const [display, setDisplay] = useState('Play a Sound !')
     
     const playAudio= (id, display) => {
-        
-        const audio=document.getElementById(id)
+        const audio = document.getElementById(id)
         audio.play()
         setDisplay(display)
     }

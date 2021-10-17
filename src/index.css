@@ -19,8 +19,6 @@ Body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 20px 20px 5px #66FCF1;
-          box-shadow: 20px 20px 5px #66FCF1;
 }
 
 h1 {
@@ -29,19 +27,28 @@ h1 {
 
 #drum-machine {
   background-color: #1F2833;
-  max-width: 50%;
+  width: 700px;
   min-height: 300px;
-  margin: auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media screen and (max-width: 700px) {
+  #drum-machine {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .drum-pads {
   margin: 1em 0;
-  max-width: 50%;
+  width: 50%;
+  margin: 2rem auto;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
@@ -57,15 +64,19 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 40%;
+  margin: 1rem auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-align: center;
 }
 #display h1 {
   border: 2px solid #45A29E;
+  margin: 1rem auto;
   padding: 0.5em 1em;
 }
 #display p {
@@ -73,5 +84,4 @@ h1 {
   font-size: 20px;
   color: #66FCF1;
   padding: 1em;
-  text-align: center;
 }
