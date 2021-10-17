@@ -6,8 +6,8 @@
 - Add other instruments (other list of obejcts) such as piano, and allow user to switch between them.
 - Grap audios with the `useRef` hook instead of DOM manipulation.
 ## Installation
-- First use `npm install` to install all the dependencies.
+- First, use `npm install` to install all the dependencies.
 - then start the devolopement server  `npm start`.
-- for more information  please reffer to [react-app](/react-app.md)
+- for more information  please refer to [react-app](/react-app.md)
 ## Try it !!
 https://redapy.github.io/drum-machine/
